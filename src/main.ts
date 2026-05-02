@@ -6,14 +6,14 @@ gsap.registerPlugin(ScrollTrigger)
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
-const tickerText = "Cotton clothes | Ready-made suits | Unstitched suits | Chikankari kurti | Plazo set | Hand embroidery dupatta | Pants | Sarees "
+const tickerText = "Ajrakh Sarees | Unstitched Suits | Ethnic Outfits | Handcrafted Cotton Clothes | Ready-made Suits | Chikankari Kurti | Plazo Set | Hand Embroidery Dupatta "
 const repeatedTicker = (tickerText).repeat(8)
 
 app.innerHTML = `
   <div class="custom-cursor"></div>
   
   <nav>
-    <a href="#" class="logo">SHALINI</a>
+    <a href="#" class="logo">वस्त्रम् By Shalini</a>
     <div class="nav-links">
       <a href="#collection">Collection</a>
       <a href="#about">Our Story</a>
@@ -23,7 +23,7 @@ app.innerHTML = `
 
   <section class="hero-section">
     <div class="hero-bg">
-      <img src="/hero.png" alt="Shalini Chikankari" />
+      <img src="/hero.png" alt="वस्त्रम् By Shalini" />
     </div>
     <div class="hero-content">
       <h1 class="split-text">
@@ -33,7 +33,7 @@ app.innerHTML = `
       <p class="fade-in">हर धागे में परंपरा, हर डिजाइन में नज़ाकत</p>
       <div class="cta-group">
         <button class="btn btn-primary">View Collection</button>
-        <button class="btn btn-secondary">Order on WhatsApp</button>
+        <a href="https://wa.me/918755930008" target="_blank" class="btn btn-secondary" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Order on WhatsApp</a>
       </div>
     </div>
   </section>
@@ -113,34 +113,45 @@ app.innerHTML = `
     <div class="collection-grid">
       <div class="collection-card">
         <div class="card-image">
+          <img src="/ajrakh_saree.png" alt="Ajrakh Sarees" />
+        </div>
+        <div class="card-content">
+          <h3>Premium Ajrakh Sarees</h3>
+          <p>परंपरा और कला का अद्भुत संगम। Hand-block printed with natural dyes.</p>
+          <a href="https://wa.me/918755930008?text=I'm%20interested%20in%20Ajrakh%20Sarees" target="_blank" class="card-btn">Enquire Now →</a>
+        </div>
+      </div>
+
+      <div class="collection-card">
+        <div class="card-image">
+          <img src="/unstitched_suit.png" alt="Unstitched Suits" />
+        </div>
+        <div class="card-content">
+          <h3>Unstitched Suits</h3>
+          <p>बेहतरीन fabrics आपकी पसंद के अनुसार design करने के लिए। Create your own legacy.</p>
+          <a href="https://wa.me/918755930008?text=I'm%20interested%20in%20Unstitched%20Suits" target="_blank" class="card-btn">Enquire Now →</a>
+        </div>
+      </div>
+
+      <div class="collection-card">
+        <div class="card-image">
+          <img src="/ethnic_outfit.png" alt="Designer Ethnic Outfits" />
+        </div>
+        <div class="card-content">
+          <h3>Designer Ethnic Outfits</h3>
+          <p>आधुनिक और पारंपरिक का संगम। Modern silhouettes with traditional soul.</p>
+          <a href="https://wa.me/918755930008?text=I'm%20interested%20in%20Designer%20Ethnic%20Outfits" target="_blank" class="card-btn">Enquire Now →</a>
+        </div>
+      </div>
+
+      <div class="collection-card">
+        <div class="card-image">
           <img src="/collection1.png" alt="Everyday Wear" />
         </div>
         <div class="card-content">
           <h3>Everyday Cotton Wear</h3>
           <p>हल्के और आरामदायक कपड़े, रोज़ पहनने के लिए परफेक्ट। Durable beauty for your daily life.</p>
-          <a href="#" class="card-btn">Enquire Now →</a>
-        </div>
-      </div>
-
-      <div class="collection-card">
-        <div class="card-image">
-          <img src="/collection3.png" alt="Unstitched Suits" />
-        </div>
-        <div class="card-content">
-          <h3>Unstitched Suits</h3>
-          <p>बेहतरीन fabrics आपकी पसंद के अनुसार design करने के लिए। Create your own legacy.</p>
-          <a href="#" class="card-btn">Enquire Now →</a>
-        </div>
-      </div>
-
-      <div class="collection-card">
-        <div class="card-image">
-          <img src="/collection4.png" alt="Plazo Set" />
-        </div>
-        <div class="card-content">
-          <h3>Plazo Set</h3>
-          <p>आधुनिक और पारंपरिक का संगम। Modern silhouettes with traditional soul.</p>
-          <a href="#" class="card-btn">Enquire Now →</a>
+          <a href="https://wa.me/918755930008?text=I'm%20interested%20in%20Everyday%20Cotton%20Wear" target="_blank" class="card-btn">Enquire Now →</a>
         </div>
       </div>
 
@@ -149,9 +160,9 @@ app.innerHTML = `
           <img src="/collection5.png" alt="Sarees" />
         </div>
         <div class="card-content">
-          <h3>Handcrafted Sarees</h3>
+          <h3>Handcrafted Chikankari Sarees</h3>
           <p>एक ऐसी पहचान जो आपको सबसे अलग बनाती है। Draped in heritage and grace.</p>
-          <a href="#" class="card-btn">Enquire Now →</a>
+          <a href="https://wa.me/918755930008?text=I'm%20interested%20in%20Chikankari%20Sarees" target="_blank" class="card-btn">Enquire Now →</a>
         </div>
       </div>
 
@@ -162,18 +173,7 @@ app.innerHTML = `
         <div class="card-content">
           <h3>Signature Dupattas</h3>
           <p>हाथों से बनी नाजुक कढ़ाई, हर outfit की जान। The crowning jewel of your ensemble.</p>
-          <a href="#" class="card-btn">Enquire Now →</a>
-        </div>
-      </div>
-
-      <div class="collection-card">
-        <div class="card-image">
-          <img src="/collection7.png" alt="Pants" />
-        </div>
-        <div class="card-content">
-          <h3>Chikankari Pants</h3>
-          <p>Elegant and versatile designs for the modern woman.</p>
-          <a href="#" class="card-btn">Enquire Now →</a>
+          <a href="https://wa.me/918755930008?text=I'm%20interested%20in%20Signature%20Dupattas" target="_blank" class="card-btn">Enquire Now →</a>
         </div>
       </div>
     </div>
@@ -182,7 +182,7 @@ app.innerHTML = `
   <section id="about" class="about-section">
     <div class="about-image">
       <div class="image-reveal-container">
-        <img src="/about2.png" alt="Shalini Chikankari Studio" />
+        <img src="/about2.png" alt="वस्त्रम् By Shalini" />
       </div>
     </div>
     <div class="about-text">
@@ -204,15 +204,14 @@ app.innerHTML = `
   <section class="final-cta-section" style="padding: 15vh 5%; text-align: center; background: #000;">
     <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 20px;">Order Your Chikankari Today</h2>
     <p style="color: var(--text-secondary); margin-bottom: 40px; font-style: italic;">Discover the beauty of handcrafted elegance and join our community of fashion lovers.</p>
-    <button class="btn btn-primary" style="padding: 20px 50px;">Connect on WhatsApp</button>
+    <a href="https://wa.me/918755930008" target="_blank" class="btn btn-primary" style="padding: 20px 50px; text-decoration: none; display: inline-flex;">Connect on WhatsApp</a>
   </section>
 
-  <footer style="padding: 40px 5%; border-top: 1px solid var(--glass-border); display: flex; justify-content: space-between; align-items: center; color: var(--text-secondary); font-size: 0.8rem;">
-    <p>&copy; 2026 Shalini Chikankari Studio. All rights reserved.</p>
-    <p>Made with ❤️ in Lucknow</p>
+  <footer style="padding: 40px 5%; border-top: 1px solid var(--glass-border); display: flex; justify-content: center; align-items: center; color: var(--text-secondary); font-size: 0.8rem;">
+    <p>&copy; 2026 वस्त्रम् By Shalini. All rights reserved.</p>
   </footer>
 
-  <a href="https://wa.me/your-number" class="whatsapp-float">
+  <a href="https://wa.me/918755930008" target="_blank" class="whatsapp-float">
     <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.892-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.417 0 6.556-5.333 11.891-11.893 11.891-2.01 0-3.987-.512-5.747-1.487l-6.345 1.692zm6.208-4.086l.361.215c1.455.867 3.133 1.326 4.869 1.326 5.179 0 9.395-4.215 9.395-9.394 0-2.508-.976-4.865-2.748-6.639-1.773-1.773-4.131-2.749-6.647-2.749-5.178 0-9.394 4.218-9.394 9.397 0 1.83.535 3.619 1.545 5.163l.236.362-.993 3.626 3.732-.977zm9.905-6.321c-.274-.137-1.62-.799-1.871-.891-.252-.091-.435-.137-.617.137-.182.274-.707.891-.868 1.074-.16.182-.32.205-.594.069-.274-.137-1.157-.426-2.204-1.36-.815-.727-1.365-1.624-1.524-1.899-.16-.274-.017-.423.12-.559.124-.122.274-.32.411-.479.137-.16.182-.274.274-.457.091-.182.046-.342-.023-.479-.069-.137-.617-1.485-.845-2.033-.222-.534-.446-.462-.617-.471-.159-.009-.342-.01-.525-.01-.182 0-.479.069-.731.342-.252.274-.959.937-.959 2.285 0 1.348.982 2.651 1.119 2.834.137.182 1.933 2.951 4.68 4.142.654.283 1.165.452 1.564.578.657.208 1.255.179 1.728.109.526-.077 1.62-.662 1.848-1.299.229-.637.229-1.187.16-1.299-.069-.114-.251-.205-.526-.341z"/>
     </svg>
